@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tabla resumen</title>
+    <link rel="stylesheet" href="../cambio receptor de pagos/css-saas/css/cpl_base.css">
+    <link rel="stylesheet" href="../cambio receptor de pagos/css-saas/css/custom.css">
+</head>
+
+<body>
+    <div class="cpl_body page_receptor_de_pago">
+        <h2>Pre solicitud de Cambio de Receptor de Pago</h2>
+        <div class="hr-linea"></div>
+        <div class="cpl_container mw_700">
+
+            <div class="steps-line margin_bottom_large">
+                <div class="step active">
+                    <div class="dot">1</div><span>Documentos necesarios</span>
+                </div>
+                <div class="step">
+                    <div class="dot">2</div><span>Adjuntar documentos</span>
+                </div>
+            </div>
+
+            <div class="center_div margin_bottom_large">
+                <p class="t-darkBlue center_text">Para solicitar el cambio del <b>receptor de pago</b>, necesitarás lo siguiente:</p>
+                <div class="caja_receptor">
+                    <label class="cpl_input_check">
+                        <input id="0" checked="" type="checkbox" name="1" value="MandatodePago" onclick="showWithRadio(this, 'tipoPago')"><span class="check"></span>
+                        <p>Mandato de pago con firma notarial (<a href="#" class="t-aqua"><strong>Descarga aquí</strong></a>)</p>
+                    </label>
+                    <div class="hr-linea"></div>
+                    <label class="cpl_input_check">
+                        <input id="0" checked="" type="checkbox" name="1" value="MandatodePago"
+                            onclick="showWithRadio(this, 'tipoPago')"><span class="check"></span>
+                        <p>Imagen de las cédula de identidad del afiliado y del nuevo receptor de pago por ambos lados.</p>
+                    </label>
+                </div>
+            </div>
+
+            <div class="flex_row mw_400 center_div">
+                <div class="cpl_col cpl_col_6">
+                    <a href="#" class="cpl_btn blue secondary">CANCELAR</a>
+                </div>
+                <div class="cpl_col cpl_col_6">
+                    <a href="#" class="cpl_btn yellow">YA TENGO TODO</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

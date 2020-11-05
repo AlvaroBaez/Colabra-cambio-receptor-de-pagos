@@ -1,0 +1,34 @@
+.page_receptor_de_pago{
+
+}
+
+.caja_receptor{
+    width: 100%;
+    background-color:#f4f4f4;
+    padding: 20px;
+    border: 1px solid #d1d6d9;
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.caja_receptor_sin_linea{
+    width: 100%;
+    background-color:#f4f4f4;
+    padding: 20px;
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hr-linea {
+    height: 1px;
+    width: 100%;
+    background-color: #d1d6d9;
+    margin: 10px 0px 20px 0px;
+}
+
+/* accordion */
+
