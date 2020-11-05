@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kit UI</title>
+    <link rel="stylesheet" href="../../css-saas/css/cpl_base.css" />
+</head>
+
+<body>
+    <div class="cpl_body page_traspaso_cuentas">
+        <div class="cpl_container mw_800">
+
+            <div class="flex_row spacing_bottom_small">
+                <div class="cpl_col cpl_col_12 center_div">
+     
+                    <div class="steps-line">
+
+                        <a href="paso-1.html" class="step  active">
+                            <div class="dot">1</div><span>paso1</span>
+                        </a>
+
+
+                        <a href="paso-2.html" class="step active">
+                            <div class="dot">2</div><span>Paso2</span>
+                        </a>
+
+
+                        <a href="paso-2.html" class="step active">
+                            <div class="dot">3</div><span>Paso3</span>
+                        </a>
+
+
+                        <a href="paso-3.html" class="step ">
+                            <div class="dot">4</div><span>Paso4</span>
+                        </a>
+
+                    </div>
+           
+                </div>
+            </div>
+
+
+            <div class="flex_row">
+
+                <div class="cpl_col cpl_col_12">
+                    <h4 class="center_text t-blue margin_top_small">Selecciona las cuentas que deseas traspasar:</h4>
+                </div>
+
+              
+                <div class="cpl_col cpl_col_12 center_div account_group">
+
+
+                    <h2>
+                        Cotización Obligatoria
+                    </h2>
+
+                
+                </div>
+  
+                <div class="cpl_col cpl_col_12 center_div account_group ">
+
+    <!-- cambio -->
+     <!-- Modificamos el formulario de los fondos actuales -->
+<div class="fondosOriginales">
+         <div class="flex_row">
+         <div class="cpl_col cpl_col_6">
+            <div class="cpl_col cpl_col_12">Fondo 1 origen</div>
+        <input type="text" class="fondo1" value="A">
+        <input type="text" class="perSaldo1" value="50">
+        <input type="text" class="Saldo1" value="231">
+        </div>
+        <div class="cpl_col cpl_col_6">
+      <div class="cpl_col cpl_col_12">Fondo 2 origen</div>
+        <input type="text" class="fondo2" value="E">
+        <input type="text" class="perSaldo2" value="50">
+        <input type="text" class="Saldo2" value="231">
+        </div>
+
+      <div class="cpl_col cpl_col_6">
+        <div class="cpl_col cpl_col_12">Recaudador origen</div>
+        <input type="text" class="recaudadorVal" value="A">
+    </div>
+    </div>
+    </div>
+
+
+                 
+    <div class="fondosActuales">
+        <div class="flex_row">
+        <div class="cpl_col cpl_col_6">
+            <div class="cpl_col cpl_col_12">Fondo 1 Actual</div>
+                        <input type="text" class="fondo1" value="A">
+                        <input type="text" class="perSaldo1" value="50">
+                        <input type="text" class="Saldo1" value="231">
+                        </div>
+                        <div class="cpl_col cpl_col_6">
+                        <div class="cpl_col cpl_col_12">Fondo 2 Actual</div>
+                        <input type="text" class="fondo2" value="E">
+                        <input type="text" class="perSaldo2" value="50">
+                        <input type="text" class="Saldo2" value="231">
+                        </div>
+                        <div class="cpl_col cpl_col_6">
+                            <div class="cpl_col cpl_col_12">Recaudador Actual</div>
+                        <input type="text" class="recaudadorVal" value="A">
+                    </div>
+                    
+                    </div>
+                
+                        <!-- resultado de la comparación  -->
+                 
+                        resultado comparación
+                        <input type="text" class="booleanDistribucion" value="false">
+                        <input type="text" class="tipoCambio" value="">
+    </div>
+
+
+                 
+
+
+                
+                  
+                    <!-- fondo recaudador, solo si hizo una distribución -->
+                    
+                    
+              
+
+                    <h2>
+                        Cuentas de Ahorro Voluntario (Cuenta 2)
+                    </h2>
+
+                    <div class="cuenta_actual">
+                        <div class="flex_row">
+                            <div class="cpl_col cpl_col_8">
+                                <p class="t-blue"><strong><span class="cpl_icon icon-alert"></span> Ya posees una cuenta
+                                        de ahorro voluntario en AFP Capital</strong></p>
+                                <p class="t-blue">Los saldos que desees traspasar desde otras AFP estarán limitados a
+                                    los fondos actuales de tu cuenta </p>
+                            </div>
+                            <div class="cpl_col cpl_col_4 center_cont">
+                                <p class="margin_bottom_none cpl_hide_phone t-blue"><strong>Fondos actuales:</strong>
+                                </p>
+                           
+                                <div class="fondosActuales cpl_col cpl_col_12 mw_200 center_div center_cont center_cont_row">
+                                    <div class="cpl_fondo cpl_col cpl_col_sd_6">
+                                        Fondo <div class="fondo_icon A">A</div>
+                                    </div>
+                                    <div class="cpl_fondo cpl_col cpl_col_sd_6">
+                                        Fondo <div class="fondo_icon E">E</div>
+                                    </div>
+                                </div>
+                                <div class="cpl_col cpl_col_12">
+                                 
+                                    <a class="cpl_btn small blue mw_200 center_div cambiarFondos">Cambiar fondos</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div class="row_cuenta">
+
+
+
+                        <div class="cuenta">
+                          
+                            <div class="check">
+                                <label class="cpl_checkbox">
+                                    <input id="ChkValidar" type="checkbox" class="select_account"
+                                        name="ctl00$ctl48$g_205663df_8f33_4c30_b971_d78e987c1919$ChkValidar" />
+                                    <span class="cpl_checkmark"></span>
+                                </label>
+                            </div>
+                    
+
+               
+                            <div class="cuenta_afp">
+                                <img src="../../css-saas/img/logo_habitat.png" alt="" />
+                            </div>
+              
+
+
+                       
+                            <div class="cuenta_saldo center_cont">
+                                <p class="t-blue">Saldo total:</p>
+                                <p class="t-blue">
+                                    <span class="cpl_number">$60.000</span>
+                                </p>
+                            </div>
+                  
+
+
+                        </div>
+               
+          
+                        <div class="formulario_cuenta_traspaso v2 center_div">
+
+
+
+                 
+                            <div class="flex_row mw_600 center_div">
+                                <div class="cpl_flex_form">
+                                    <div
+                                        class="cpl_col cpl_col_12 mw_200 padding_bottom_medium  input_wrap select_wrap">
+                                        <label for=""><span>Tipo de traspaso</span></label>
+                                        <select class="cpl_input tipoTraspaso" id="">
+                                            <option value="1">Total</option>
+                                            <option value="2">Parcial</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                      
+
+
+                            <div class="flex_row mw_600 center_div">
+                                <div class="cpl_flex_form">
+                                    <div class="cpl_col cpl_col_sd_6">
+                                        <p class="title">Origen: <br><strong>AFP ProVida</strong></p>
+                                    </div>
+
+                                    <div class="cpl_col cpl_col_sd_6">
+                                        <p class="title">Destino: <br><strong>AFP Capital</strong></p>
+                                    </div>
+
+                                 
+                                    <div class="cpl_col cpl_col_12  traspasoXfondo">
+                                        <div class="flex_row">
+
+                                         
+                                            <div class="cpl_col cpl_col_sd_6 origen">
+                                                <div class="cpl_fondo cpl_col cpl_col_12">
+                                                    Fondo <div class="fondo_icon B">B</div>
+                                                </div>
+
+                                                <div class="cpl_col cpl_col_12 monto">
+                                                    <span class="cpl_number">$30.000</span>
+                                                </div>
+                                            </div>
+                              
+
+
+                                      
+                                            <div class="cpl_col cpl_col_sd_6 destino">
+                                                <div class="flex_row">
+                                                    <div
+                                                        class="cpl_col cpl_col_12 input_wrap select_wrap custom_select_wrap">
+                                                        <input type="text" class="inputSelect" />
+                                                 
+                                                        <div class="custom_select">
+                                                            <div class="selected"></div>
+                                                            <ul>
+                                                                <li class="default">Elegir fondo</li>
+                                                                <li class="A">
+                                                                    <div class="cpl_fondo cpl_col">
+                                                                        Fondo
+                                                                        <div class="fondo_icon A animated flipInY">
+                                                                            A
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="B">
+                                                                    <div class="cpl_fondo cpl_col">
+                                                                        Fondo
+                                                                        <div class="fondo_icon B animated flipInY">
+                                                                            B
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="C">
+                                                                    <div class="cpl_fondo cpl_col">
+                                                                        Fondo
+                                                                        <div class="fondo_icon C animated flipInY">
+                                                                            C
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+
+
+                                                                <li class="D">
+                                                                    <div class="cpl_fondo cpl_col">
+                                                                        Fondo
+                                                                        <div class="fondo_icon D animated flipInY">
+                                                                            D
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+
+
+                                                                <li class="E">
+                                                                    <div class="cpl_fondo cpl_col">
+                                                                        Fondo
+                                                                        <div class="fondo_icon E animated flipInY">
+                                                                            E
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+
+                                                        </div>
+
+                                                    </div>
+
+
+                                                    <div class="cpl_col cpl_col_12 monto">
+                                                        <span class="cpl_number">$30.000</span>
+                                                    </div>
+
+
+
+                                                    <div class="cpl_col cpl_col_8 input_wrap partial_field">
+
+                                                        <input type="text" name="currency-field"
+                                                            class="cpl_input currency-field"
+                                                            pattern="^\$\d{1,3}(.\d{3})*(\,\d+)?$" value=""
+                                                            data-type="currency" placeholder="$0">
+                                                    </div>
+
+
+
+                                                    <div
+                                                        class="cpl_col cpl_col_4 input_wrap percentage_wrap partial_field">
+
+                                                        <input type="number" class="cpl_input" max="100" min="0" />
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+                              
+                                        </div>
+                                    </div>
+                      
+
+
+                          
+                                    <div class="cpl_col cpl_col_12  traspasoXfondo">
+                                        <div class="flex_row">
+
+                                     
+                                            <div class="cpl_col cpl_col_sd_6 origen">
+                                                <div class="cpl_fondo cpl_col cpl_col_12">
+                                                    Fondo <div class="fondo_icon C">C</div>
+                                                </div>
+
+                                                <div class="cpl_col cpl_col_12 monto">
+                                                    <span class="cpl_number">$30.000</span>
+                                                </div>
+                                            </div>
+                                 
+
+
+                                     
+                                            <div class="cpl_col cpl_col_sd_6 destino">
+                                                <div class="flex_row">
+                                                    <div
+                                                        class="cpl_col cpl_col_12 input_wrap select_wrap custom_select_wrap">
+                                                        <input type="text" class="inputSelect" />
+                                                 
+                                                        <div class="custom_select">
+                                                            <div class="selected"></div>
+                                                            <ul>
+                                                                <li class="default">Elegir fondo</li>
+                                                                <li class="A">
+                                                                    <div class="cpl_fondo cpl_col">
+                                                                        Fondo
+                                                                        <div class="fondo_icon A animated flipInY">
+                                                                            A
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="B">
+                                                                    <div class="cpl_fondo cpl_col">
+                                                                        Fondo
+                                                                        <div class="fondo_icon B animated flipInY">
+                                                                            B
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="C">
+                                                                    <div class="cpl_fondo cpl_col">
+                                                                        Fondo
+                                                                        <div class="fondo_icon C animated flipInY">
+                                                                            C
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+
+
+                                                                <li class="D">
+                                                                    <div class="cpl_fondo cpl_col">
+                                                                        Fondo
+                                                                        <div class="fondo_icon D animated flipInY">
+                                                                            D
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+
+
+                                                                <li class="E">
+                                                                    <div class="cpl_fondo cpl_col">
+                                                                        Fondo
+                                                                        <div class="fondo_icon E animated flipInY">
+                                                                            E
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+
+                                                        </div>
+
+                                                    </div>
+
+
+                                                    <div class="cpl_col cpl_col_12 monto">
+                                                        <span class="cpl_number">$30.000</span>
+                                                    </div>
+
+
+
+                                                    <div class="cpl_col cpl_col_8 input_wrap partial_field">
+
+                                                        <input type="text" name="currency-field"
+                                                            class="cpl_input currency-field"
+                                                            pattern="^\$\d{1,3}(.\d{3})*(\,\d+)?$" value=""
+                                                            data-type="currency" placeholder="$0">
+                                                    </div>
+
+
+
+                                                    <div
+                                                        class="cpl_col cpl_col_4 input_wrap percentage_wrap partial_field">
+
+                                                        <input type="number" class="cpl_input" max="100" min="0" />
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+                                       
+                                        </div>
+                                    </div>
+                           
+
+                                </div>
+                            </div>
+                        </div>
+                      
+                    </div>
+              
+
+
+
+
+                
+                    <div class="row_cuenta">
+
+
+
+                        <div class="cuenta">
+                     
+                            <div class="check">
+                                <label class="cpl_checkbox">
+                                    <input id="ChkValidar" type="checkbox" class="select_account"
+                                        name="ctl00$ctl48$g_205663df_8f33_4c30_b971_d78e987c1919$ChkValidar" />
+                                    <span class="cpl_checkmark"></span>
+                                </label>
+                            </div>
+                
+
+                            <div class="cuenta_afp">
+                                <img src="../../css-saas/img/logo_provida.png" alt="" />
+                            </div>
+              
+
+                       
+                            <div class="cuenta_saldo center_cont">
+                                <p class="t-blue">Saldo total:</p>
+                                <p class="t-blue">
+                                    <span class="cpl_number">$60.000</span>
+                                </p>
+                            </div>
+                         
+
+
+                        </div>
+
+
+
+
+
+                   
+                        <div class="formulario_cuenta_traspaso v2 center_div">
+
+
+
+                            <div class="flex_row mw_600 center_div">
+                                <div class="cpl_flex_form">
+                                    <div
+                                        class="cpl_col cpl_col_12 mw_200 padding_bottom_medium  input_wrap select_wrap">
+                                        <label for=""><span>Tipo de traspaso</span></label>
+                                        <select class="cpl_input tipoTraspaso" id="">
+                                            <option value="1">Total</option>
+                                            <option value="2">Parcial</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                 
+
+
+                            <div class="flex_row mw_600 center_div">
+                                <div class="cpl_flex_form">
+                                    <div class="cpl_col cpl_col_sd_6">
+                                        <p class="title">Origen: <br><strong>AFP ProVida</strong></p>
+                                    </div>
+
+                                    <div class="cpl_col cpl_col_sd_6">
+                                        <p class="title">Destino: <br><strong>AFP Capital</strong></p>
+                                    </div>
+
+                            
+                                    <div class="cpl_col cpl_col_12  traspasoXfondo">
+                                        <div class="flex_row">
+
+                               
+                                            <div class="cpl_col cpl_col_sd_6 origen">
+                                                <div class="cpl_fondo cpl_col cpl_col_12">
+                                                    Fondo <div class="fondo_icon D">D</div>
+                                                </div>
+
+                                                <div class="cpl_col cpl_col_12 monto">
+                                                    <span class="cpl_number">$30.000</span>
+                                                </div>
+                                            </div>
+                                      
+
+
+                                            <div class="cpl_col cpl_col_sd_6 destino">
+                                                <div class="flex_row">
+                                                    <div
+                                                        class="cpl_col cpl_col_12 input_wrap select_wrap custom_select_wrap">
+                                                        <input type="text" class="inputSelect" />
+                                           
+                                                        <div class="custom_select">
+                                                            <div class="selected"></div>
+                                                            <ul>
+                                                                <li class="default">Elegir fondo</li>
+                                                                <li class="A">
+                                                                    <div class="cpl_fondo cpl_col">
+                                                                        Fondo
+                                                                        <div class="fondo_icon A animated flipInY">
+                                                                            A
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="B">
+                                                                    <div class="cpl_fondo cpl_col">
+                                                                        Fondo
+                                                                        <div class="fondo_icon B animated flipInY">
+                                                                            B
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="C">
+                                                                    <div class="cpl_fondo cpl_col">
+                                                                        Fondo
+                                                                        <div class="fondo_icon C animated flipInY">
+                                                                            C
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+
+
+                                                                <li class="D">
+                                                                    <div class="cpl_fondo cpl_col">
+                                                                        Fondo
+                                                                        <div class="fondo_icon D animated flipInY">
+                                                                            D
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+
+
+                                                                <li class="E">
+                                                                    <div class="cpl_fondo cpl_col">
+                                                                        Fondo
+                                                                        <div class="fondo_icon E animated flipInY">
+                                                                            E
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+
+                                                        </div>
+
+                                                    </div>
+
+
+                                                    <div class="cpl_col cpl_col_12 monto">
+                                                        <span class="cpl_number">$30.000</span>
+                                                    </div>
+
+
+
+                                                    <div class="cpl_col cpl_col_8 input_wrap partial_field">
+
+                                                        <input type="text" name="currency-field"
+                                                            class="cpl_input currency-field"
+                                                            pattern="^\$\d{1,3}(.\d{3})*(\,\d+)?$" value=""
+                                                            data-type="currency" placeholder="$0">
+                                                    </div>
+
+
+
+                                                    <div
+                                                        class="cpl_col cpl_col_4 input_wrap percentage_wrap partial_field">
+
+                                                        <input type="number" class="cpl_input" max="100" min="0" />
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+                                  
+                                        </div>
+                                    </div>
+                  
+
+
+                  
+                                    <div class="cpl_col cpl_col_12  traspasoXfondo">
+                                        <div class="flex_row">
+
+                                     
+                                            <div class="cpl_col cpl_col_sd_6 origen">
+                                                <div class="cpl_fondo cpl_col cpl_col_12">
+                                                    Fondo <div class="fondo_icon E">E</div>
+                                                </div>
+
+                                                <div class="cpl_col cpl_col_12 monto">
+                                                    <span class="cpl_number">$30.000</span>
+                                                </div>
+                                            </div>
+                                          
+                                            <div class="cpl_col cpl_col_sd_6 destino">
+                                                <div class="flex_row">
+                                                    <div
+                                                        class="cpl_col cpl_col_12 input_wrap select_wrap custom_select_wrap">
+                                                        <input type="text" class="inputSelect" />
+                                              
+                                                        <div class="custom_select">
+                                                            <div class="selected"></div>
+                                                            <ul>
+                                                                <li class="default">Elegir fondo</li>
+                                                                <li class="A">
+                                                                    <div class="cpl_fondo cpl_col">
+                                                                        Fondo
+                                                                        <div class="fondo_icon A animated flipInY">
+                                                                            A
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="B">
+                                                                    <div class="cpl_fondo cpl_col">
+                                                                        Fondo
+                                                                        <div class="fondo_icon B animated flipInY">
+                                                                            B
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="C">
+                                                                    <div class="cpl_fondo cpl_col">
+                                                                        Fondo
+                                                                        <div class="fondo_icon C animated flipInY">
+                                                                            C
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+
+
+                                                                <li class="D">
+                                                                    <div class="cpl_fondo cpl_col">
+                                                                        Fondo
+                                                                        <div class="fondo_icon D animated flipInY">
+                                                                            D
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+
+
+                                                                <li class="E">
+                                                                    <div class="cpl_fondo cpl_col">
+                                                                        Fondo
+                                                                        <div class="fondo_icon E animated flipInY">
+                                                                            E
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+
+                                                        </div>
+
+                                                    </div>
+
+
+                                                    <div class="cpl_col cpl_col_12 monto">
+                                                        <span class="cpl_number">$30.000</span>
+                                                    </div>
+
+
+
+                                                    <div class="cpl_col cpl_col_8 input_wrap partial_field">
+
+                                                        <input type="text" name="currency-field"
+                                                            class="cpl_input currency-field"
+                                                            pattern="^\$\d{1,3}(.\d{3})*(\,\d+)?$" value=""
+                                                            data-type="currency" placeholder="$0">
+                                                    </div>
+
+
+
+                                                    <div
+                                                        class="cpl_col cpl_col_4 input_wrap percentage_wrap partial_field">
+
+                                                        <input type="number" class="cpl_input" max="100" min="0" />
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+                                     
+                                        </div>
+                                    </div>
+                            
+
+                                </div>
+                            </div>
+                        </div>
+                     
+                    </div>
+               
+                    <div class="footer_grupo_cuentas">
+                        <div class="select_recaudador cpl_flex_form cpl_col cpl_col_8"> <input type="text"
+                                class="booleanRecaudador" value="false">
+
+
+                            <div class="cpl_col cpl_col_12 input_wrap select_wrap custom_select_wrap">
+
+                                <label for=""><span>Selecciona el fondo recaudador para tu {NOMBRE DE LA
+                                        CUENTA}</span></label>
+
+                                <input type="text" class="inputSelect" />
+                                <div class="custom_select">
+                                    <div class="selected"></div>
+                                    <ul>
+                                        <li class="default">Elegir fondo</li>
+                                        <li class="A">
+                                            <div class="cpl_fondo cpl_col">
+                                                Fondo
+                                                <div class="fondo_icon A animated flipInY">
+                                                    A
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="B">
+                                            <div class="cpl_fondo cpl_col">
+                                                Fondo
+                                                <div class="fondo_icon B animated flipInY">
+                                                    B
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="C">
+                                            <div class="cpl_fondo cpl_col">
+                                                Fondo
+                                                <div class="fondo_icon C animated flipInY">
+                                                    C
+                                                </div>
+                                            </div>
+                                        </li>
+
+
+                                        <li class="D">
+                                            <div class="cpl_fondo cpl_col">
+                                                Fondo
+                                                <div class="fondo_icon D animated flipInY">
+                                                    D
+                                                </div>
+                                            </div>
+                                        </li>
+
+
+                                        <li class="E">
+                                            <div class="cpl_fondo cpl_col">
+                                                Fondo
+                                                <div class="fondo_icon E animated flipInY">
+                                                    E
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                       
+
+                            </div>
+                        </div>
+
+                        <div class="total cpl_col cpl_col_4">
+                            <p>
+                                Total traspaso de {NOMBRE DE LA CUENTA}</p>
+                            <h4>
+                                <strong class="cpl_number">$0</strong></h4>
+
+                            </p>
+                        </div>
+                    </div>
+         
+<div class="cpl_modal center_modal modal_cambio_fondos ModalFondo1">
+    <div class="modal_box mw_600 ">
+        <div class="close close_action"></div>
+        <div class="modal_cont ">
+
+            <div class="flex_row mw_500 center_div">
+                
+                    <!-- title -->
+                    <div class="flex_row">
+                        <div class="cpl_col cpl_col_12 center_div spacing_bottom_medium">
+                            <h1 class="center_text">Cambio de fondos 2</h1>
+                        </div>
+                    </div>
+                    <!-- fin title -->
+
+                    <div class="flex_row">
+                        <div class="cpl_col cpl_col_12 spacing_bottom_medium cpl_border_bottom">
+                            <div class="cpl_col cpl_col_6 ">
+                                <p>Cuenta de ahorro voluntario, AFP Capital</p>
+                            </div>
+                            <div class="cpl_col cpl_col_6 t-blue" style="text-align: right;">
+                                <label class="label_l"><span class="t-blue">Saldo</span></label>
+                                <input name="ctl00$ctl52$g_a893baf5_32f4_45df_afba_0cabdcbd1ad2$txtSaldoProductoModal_APV" type="text" id="ctl00_ctl52_g_a893baf5_32f4_45df_afba_0cabdcbd1ad2_txtSaldoProductoModal_APV" class="cpl_input currency-field txtSaldoOrigenFondoModal" pattern="^\$\d{1,3}(.\d{3})*(\,\d+)?$" data-type="currency" placeholder="$0" disabled="disabled" value="$462">
+                            </div>
+                        </div>
+
+                        <div class="cpl_col cpl_col_12 cpl_flex_form center_div">
+                            <h3 class="t-blue center_text">Elige uno o dos fondos</h3>
+                            <div class="cpl_alert_bar alert_error margin_bottom_small center_text error_no_fondos" >
+                                <p>Debes agregar al menos un fondo</p>
+                            </div>
+                         
+                            <div class="flex_row spacing_bottom_medium">
+                                <div id="fondoLeft" class="col_fondo cpl_col cpl_col_sd_6">
+                               
+                                    <div class="btnAgregaFondo">
+                                        <h2 class="t-gray center_text"><span class="cpl_icon icon-add"></span></h2>
+                                      <p>Agregar fondo</p>
+                                    </div>
+                                    <div class="flex_row">
+                                        <div class="cpl_col cpl_col_12 cpl_flex_form cpl_caja_fondo" style="display: block;">
+                                            <div class="cpl_col cpl_col_12 input_wrap select_wrap custom_select_wrap">
+                                                <!-- cambio -->
+                                                <!--Agregamos la clase modalInput a los campos ocultos de fondo 1 y 2 -->
+                                                <input name="ctl00$ctl52$g_a893baf5_32f4_45df_afba_0cabdcbd1ad2$hdnFondo1Modal_APV" type="hidden" id="ctl00_ctl52_g_a893baf5_32f4_45df_afba_0cabdcbd1ad2_hdnFondo1Modal_APV" class="inputSelect inputSelectFondo1 modalInput" data-error1="FondoDestinoVacio" data-error2="MontoDestinoVacio" data-error3="MontoDestinoMenor1000" data-error4="MontoDestinoTraspasoTotal" data-val="Validaciones_APV_MODAL" value="C">
+                                     
+                                                <div class="custom_select modalInput fondo1">
+                                                    <div class="selected"><div class="cpl_fondo cpl_col">Fondo<div class="fondo_icon C animated flipInY">C</div></div></div>
+                                                    <ul style="display: none;">
+                                                        <li class="default">Elegir fondo</li>
+                                                        <li class="A">
+                                                            <div class="cpl_fondo cpl_col">
+                                                                Fondo
+                                    <div class="fondo_icon A animated flipInY">
+                                        A
+                                    </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="B">
+                                                            <div class="cpl_fondo cpl_col">
+                                                                Fondo
+                                    <div class="fondo_icon B animated flipInY">
+                                        B
+                                    </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="C">
+                                                            <div class="cpl_fondo cpl_col">
+                                                                Fondo
+                                    <div class="fondo_icon C animated flipInY">
+                                        C
+                                    </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="D">
+                                                            <div class="cpl_fondo cpl_col">
+                                                                Fondo
+                                    <div class="fondo_icon D animated flipInY">
+                                        D
+                                    </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="E">
+                                                            <div class="cpl_fondo cpl_col">
+                                                                Fondo
+                                    <div class="fondo_icon E animated flipInY">
+                                        E
+                                    </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="f_error" style="display: none;">Elige un fondo</div>
+                                            </div>
+                                            <div class="cpl_col cpl_col_12 input_wrap percentage_wrap">
+                                                <input name="ctl00$ctl52$g_a893baf5_32f4_45df_afba_0cabdcbd1ad2$txtPorcentajeFondo1Modal_APV" type="text" id="ctl00_ctl52_g_a893baf5_32f4_45df_afba_0cabdcbd1ad2_txtPorcentajeFondo1Modal_APV" data-saldodestino="txtSaldoDestinoFondo1Modal" min="0" value="100" class="cpl_input txtPorcentajeFondo1Modal" data-porcentajefondo="txtPorcentajeFondo2Modal" data-modal="ModalFondo_APV" data-saldoorigen="txtSaldoOrigenFondoModal" data-destinosaldofondo="txtSaldoDestinoFondo2Modal" max="100" placeholder="0">
+                                                <div class="f_error error_per_0" >Elige un porcentaje</div>
+                                            </div>
+                                            <div class="cpl_col cpl_col_12 input_wrap">
+                                                <input name="ctl00$ctl52$g_a893baf5_32f4_45df_afba_0cabdcbd1ad2$txtSaldoDestinoFondo1Modal_APV" type="text" id="ctl00_ctl52_g_a893baf5_32f4_45df_afba_0cabdcbd1ad2_txtSaldoDestinoFondo1Modal_APV" class="cpl_input currency-field txtSaldoDestinoFondo1Modal" pattern="^\$\d{1,3}(.\d{3})*(\,\d+)?$" data-type="currency" placeholder="$0" disabled="disabled" value="$462">
+                                            </div>
+                                        </div>
+                                        <a class="eraseFondo center_text center_div"><span class="cpl_icon icon-star"></span> Quitar fondo</a>
+                                    </div>
+                                </div>
+
+                                <div id="fondoRight" class="col_fondo cpl_col cpl_col_sd_6">
+                                    <div class="btnAgregaFondo" >
+                                        <h2 class="t-gray center_text"><span class="cpl_icon icon-add"></span></h2>
+                                        <p>Agregar fondo</p>
+                                    </div>
+                               
+                                    <div class="cpl_col cpl_col_12 cpl_flex_form cpl_caja_fondo" style="display: block;">
+                                        <div class="cpl_col cpl_col_12 input_wrap select_wrap custom_select_wrap">
+                                                     <!-- cambio -->
+                                                <!--Agregamos la clase modalInput a los campos ocultos de fondo 1 y 2 -->
+                                            <input name="ctl00$ctl52$g_a893baf5_32f4_45df_afba_0cabdcbd1ad2$hdnFondo2Modal_APV" type="hidden" id="ctl00_ctl52_g_a893baf5_32f4_45df_afba_0cabdcbd1ad2_hdnFondo2Modal_APV" class="inputSelect inputSelectFondo2 modalInput" data-error1="FondoDestinoVacio" data-error2="MontoDestinoVacio" data-error3="MontoDestinoMenor1000" data-error4="MontoDestinoTraspasoTotal" data-val="Validaciones_APV_MODAL" value="">
+                                          
+                                            <div class="custom_select modalInput fondo2">
+                                                <div class="selected">Elegir fondo</div>
+                                                <ul style="display: none;">
+                                                    <li class="default">Elegir fondo</li>
+                                                    <li class="A">
+                                                        <div class="cpl_fondo cpl_col">
+                                                            Fondo
+                                <div class="fondo_icon A animated flipInY">
+                                    A
+                                </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="B">
+                                                        <div class="cpl_fondo cpl_col">
+                                                            Fondo
+                                <div class="fondo_icon B animated flipInY">
+                                    B
+                                </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="C" style="display: none;">
+                                                        <div class="cpl_fondo cpl_col">
+                                                            Fondo
+                                <div class="fondo_icon C animated flipInY">
+                                    C
+                                </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="D">
+                                                        <div class="cpl_fondo cpl_col">
+                                                            Fondo
+                                <div class="fondo_icon D animated flipInY">
+                                    D
+                                </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="E">
+                                                        <div class="cpl_fondo cpl_col">
+                                                            Fondo
+                                <div class="fondo_icon E animated flipInY">
+                                    E
+                                </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="f_error" style="display: none;">Elige un fondo</div>
+                                        </div>
+                                        <div class="cpl_col cpl_col_12 input_wrap percentage_wrap">
+                                            <input name="ctl00$ctl52$g_a893baf5_32f4_45df_afba_0cabdcbd1ad2$txtPorcentajeFondo2Modal_APV" type="text" id="ctl00_ctl52_g_a893baf5_32f4_45df_afba_0cabdcbd1ad2_txtPorcentajeFondo2Modal_APV" data-saldodestino="txtSaldoDestinoFondo2Modal" min="0" class="cpl_input txtPorcentajeFondo2Modal" data-porcentajefondo="txtPorcentajeFondo1Modal" data-modal="ModalFondo_APV" data-saldoorigen="txtSaldoOrigenFondoModal" data-destinosaldofondo="txtSaldoDestinoFondo1Modal" max="100">
+                                               <!-- cambio -->
+                                                <!-- agregar clase identificadora al error (error_per_0) -->
+                                            <div class="f_error error_per_0" >Elige un porcentaje</div>
+                                        </div>
+                                        <div class="cpl_col cpl_col_12 input_wrap">
+                                            <input name="ctl00$ctl52$g_a893baf5_32f4_45df_afba_0cabdcbd1ad2$txtSaldoDestinoFondo2Modal_APV" type="text" id="ctl00_ctl52_g_a893baf5_32f4_45df_afba_0cabdcbd1ad2_txtSaldoDestinoFondo2Modal_APV" class="cpl_input currency-field txtSaldoDestinoFondo2Modal" pattern="^\$\d{1,3}(.\d{3})*(\,\d+)?$" data-type="currency" placeholder="$0" disabled="disabled">
+                                        </div>
+                                    </div>
+                                        <a class="eraseFondo center_text center_div"><span class="cpl_icon icon-star"></span> Quitar fondo</a>
+                          
+                            </div>
+
+                            <div class="cpl_col cpl_col_12 cpl_flex_form center_div spacing_bottom_medium">
+                               
+                                <div class="flex_row">
+                                    <!-- select -->
+                                    <div
+                                    class="cpl_col cpl_col_12 input_wrap select_wrap custom_select_wrap modal_recaudador">
+                                    <input type="text" class="inputSelect modalInput" val="" />
+                                             <!-- cambio -->
+                                                <!-- Este título se mueve dentro del custom_select_wrap -->
+                                    <h4 class="center_text t-blue">¿Qué fondo quieres como recaudador?</h4>
+                                    <div class="custom_select modalInput">
+                                        <div class="selected"></div>
+                                        <ul>
+                                            <li class="default">Elegir fondo</li>
+                                            <li class="A">
+                                                <div class="cpl_fondo cpl_col">
+                                                    Fondo
+                                                    <div class="fondo_icon A animated flipInY">
+                                                        A
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="B">
+                                                <div class="cpl_fondo cpl_col">
+                                                    Fondo
+                                                    <div class="fondo_icon B animated flipInY">
+                                                        B
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="C">
+                                                <div class="cpl_fondo cpl_col">
+                                                    Fondo
+                                                    <div class="fondo_icon C animated flipInY">
+                                                        C
+                                                    </div>
+                                                </div>
+                                            </li>
+
+
+                                            <li class="D">
+                                                <div class="cpl_fondo cpl_col">
+                                                    Fondo
+                                                    <div class="fondo_icon D animated flipInY">
+                                                        D
+                                                    </div>
+                                                </div>
+                                            </li>
+
+
+                                            <li class="E">
+                                                <div class="cpl_fondo cpl_col">
+                                                    Fondo
+                                                    <div class="fondo_icon E animated flipInY">
+                                                        E
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                      <!-- cambio -->
+                                    <!-- agregar clase identificadora al error (error_no_fondo_recaudador) -->
+                                     <div class="f_error error_no_fondo_recaudador">Debes elegir un fondo recaudador</div>
+                                </div>
+                                    <!-- select -->
+                                
+                                </div>
+                            </div>
+                            <div class="cpl_col cpl_col_12 cpl_flex_form center_div spacing_bottom_medium">
+                                <div class="flex_row">
+                                    <div class="input_wrap cpl_col_sd_2">
+                                        <div class="check">
+                                            <label class="cpl_checkbox">
+                                                 <!-- cambio -->
+                                    <!-- agregar clase identificadora al checkbox (declaration) -->
+                                                <input id="ChkValidar" type="checkbox" class="declaration" name="ctl00$ctl48$g_205663df_8f33_4c30_b971_d78e987c1919$ChkValidar">
+                                                <span class="cpl_checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <p class="cpl_col_sd_10">Entiendo y acepto qie este cambio efectará a mis saldos en mi actual cuenta y a los que traspasaré.</p>
+                                     <!-- cambio -->
+                                    <!-- agregar clase identificadora al error (error_no_check) -->
+                                    <span class="f_error error_no_check">Debes aceptar las condiciones antes de continuar.</span>
+
+                                </div>
+                            </div>
+
+                            <div class="flex_row center_div">
+                                <div class="cpl_col cpl_col_6 ">
+                                    <a class="cpl_btn secondary blue mw_300 close_action center_div">Cancelar</a>
+                                </div>
+                                <div class="cpl_col cpl_col_6 padding_bottom_medium">
+                                  
+                                    <a class="cpl_btn mw_300  center_div guardar">Guardar</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--Fin Modal cambio de fondo-->
+
+                </div>
+
+
+
+                <div class="cpl_col cpl_col_12 padding_top_medium center_div mw_400">
+                    <div class="flex_row spacing_bottom_medium">
+                        <div class="cpl_col cpl_col_s_6">
+                            <a href="paso-1.html" class="cpl_btn aqua secondary">Atrás</a>
+                        </div>
+                        <div class="cpl_col cpl_col_s_6">
+                            <a onclick="detectarCambios();" class="cpl_btn">Siguiente</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+            
+    
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <script src="../../css-saas/js/jquery.js"></script>
+
+    <script src="../../css-saas/js/globals.js"></script>
+    <script src="../../css-saas/js/custom_select.js"></script>
+    <script src="../../css-saas/js/traspaso_cuentas.js"></script>
+    <script src="../../css-saas/js/modal.js"></script>
+
+
+
+</body>
+
+</html>
