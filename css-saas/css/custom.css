@@ -58,6 +58,7 @@ button.accordion {
   border: 1px solid white;
   display: flex;
   justify-content: space-between;
+  margin-left: 0px;
 }
 
 button.accordion:after {
